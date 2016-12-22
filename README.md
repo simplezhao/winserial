@@ -3,12 +3,16 @@ windows系统下串口的使用
 主要函数：
 1. 初始化串口函数（端口，波特率，停止位，校验位）
 `openSerialPort(portname,audrate baudrate, Stopbits stopbits, Paritycheck parity);`
+
 2. 向串口写数据（File HANDLE，数据，长度）
 `writeToSerialPort(hSerial, data, length);`
+
 3. 从串口中读取数据（File HANDLE，buff，长度）
 `readFromSerialPort(hSerial, buffer, buffersize);`
+
 4. 关闭串口
 `closeSerialPort(hSerial);`
+
 
 下面是一个sample:
 ```
